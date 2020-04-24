@@ -21,6 +21,7 @@ def one_plot():
 	plt.plot(year, ppubs, label="Peak of Publishers")
 	plt.plot(year, df["Average Publishers Preaching Each Month"], label="Average Publishers Preaching Each Month")
 	plt.plot(year, df["Average Bible Studies Each Month"], label="Average Bible Studies Each Month")
+	plt.xlabel("Year")
 	plt.grid(color="Gray", linestyle="-", linewidth=0.5)
 	plt.legend()
 	plt.show()

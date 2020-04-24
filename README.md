@@ -1,5 +1,5 @@
 # Statistical Study on Growth of Jehovah's Witnesses
-This is a project to find insights on the growth of Jehovah's Witnesses since 1991 using Python Data Science Libraries(pandas,numpy,matplotlib,sk-learn,etc).
+This is a project to find insights on the growth of Jehovah's Witnesses since 1991 using Python Data Science Libraries (pandas, numpy, matplotlib, &sk-learn).
 
 
 ## Background
@@ -72,10 +72,10 @@ plt.show()
 There has been tremendous growth in all three variables. While the number of congregations has started to plateau, both Memorial Attendance and Total Hours hit thier peaks in 2019.
 
 
-### Interesting Plots
+## Interesting Plots
 
 
-## Memorial Partakers
+### Memorial Partakers
 
 ```python
 plt.plot(year, df["Memorial Partakers Worldwide"], label="Memorial Partakers Worldwide")
@@ -91,7 +91,7 @@ plt.show()
 Wow! The number of memorial partakers each year remained relatively flat until 2005. After that it exploded! It went from 8,524 in 2005 to 20,526 in 2019. That is a 141% increase!
 
 
-## Total Number Baptized
+### Total Number Baptized
 
 ```python
 plt.plot(year,bap,color="Orange")
@@ -105,7 +105,7 @@ plt.show()
 ![Baptized Line Graph](./plots/Baptized.png)
 
 
-Wow! What an interesting plot. This plot has much more variation and fluctuation. that The plot shows that in the 1990s there was relatively high numbers of people getting baptized, but the number has dropped in recent years. But ever since 2015, the number has started to rise again.
+This plot has much more fluctuation. The graph shows that in the 1990s there was relatively high numbers of people getting baptized, but the number steadily dropped in the 2000s. But ever since 2015, the number has started to rise again.
 
 There seems to be a peak somewhere between 1995-2000. Let's create a bar chart to see the specifics:
 
@@ -125,7 +125,7 @@ plt.show()
 With a Bar Chart we can now clearly see that most people that were ever baptized was in 1997.  
 
 
-### Linear Regression
+## Linear Regression
 Our final plot will be a scatterplot of Peak Publishers vs. Total Number Baptized. I predict that as the Total Number Baptized increases, the Peak Publishers will also increase. Let's see if my prediction is correct.
 
 Let's first create a linear model with scikit.
@@ -136,7 +136,7 @@ model.fit(bap, ppubs)
 y_pred=model.predict(bap)
 ```
 
-Now let's plot Peak Publishers vs. Total Number Baptized with the LSRL (line of best fit).
+Now let's plot Peak Publishers vs. Total Number Baptized with the line of best fit.
 
 ```python
 plt.scatter(bap,ppubs,color="dimgray")
@@ -154,7 +154,7 @@ My prediction was wrong! The direction of the scatterplot is actually negative: 
 
 
 ## Conclusion
-This was a fun project where I got to learn a lot about my data with a few Python Data Science Libraries.
+This was a fun project where I got to learn a lot about my data with the help of a few Python Data Science Libraries.
 
 
 
